@@ -26,7 +26,7 @@ class Admin extends CI_Controller {
 		$perfil = $this->session->userdata('perfil');
 
 		$data = array(
-			'titulo' => 'CarrosDeRua - Painel Administrativo',
+			'titulo' => 'Carros De Rua - Painel Administrativo',
 			'ondeEsta' => 'Painel',
 			'descricao' => 'Você está no painel Principal!',
 			'tela' => 'painel-admin',

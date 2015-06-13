@@ -1,33 +1,32 @@
-      <!-- ****************************************************
-      *
-      *       CONTENT do SITE
-      *
-      **************************************************** -->
-      <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-          <h1>
-            <?php echo $ondeEsta ?>
-            <small><?php echo $descricao ?></small>
-          </h1>
-        </section>
+<div class="content-wrapper">
 
-        <!-- Main content -->
-        <section class="content">
+  <section class="content-header">
 
-          CONTEUDO DO SITE
-          <?php echo '<h1>' . $idusuario . '</h1>' ; ?>
-          <?php echo $perfil; ?>
+    <h1>
+      <?php echo $ondeEsta ?>
+      <small><?php echo $descricao ?></small>
+    </h1>
 
-          <br><br><br>
+  </section>
 
-          <?php echo $infosDoUsuario->nome; ?>
 
-        </section><!-- /.content -->
-      </div><!-- /.content-wrapper -->
-      <!-- ****************************************************
-      *
-      *       FIM do CONTENT do site
-      *
-      **************************************************** -->
+
+  <section class="content">
+
+    CONTEUDO DO SITE
+    <?php echo '<h1>' . $idusuario . '</h1>' ; ?>
+    <?php echo $perfil; ?>
+
+    <br><br><br>
+
+    <?php echo $infosDoUsuario->nome; ?>
+
+  </section><!-- /.content -->
+
+
+
+  <section>
+    
+  </section>
+
+</div>
