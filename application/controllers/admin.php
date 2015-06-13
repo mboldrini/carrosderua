@@ -39,6 +39,30 @@ class Admin extends CI_Controller {
 
 	}
 
+	public function perfil(){
+
+		if($this->session->userdata('perfil') == FALSE || $this->session->userdata('perfil') != 'administrador'){
+			redirect(base_url().'login');
+		}
+
+		/* pega o Id_usuario que veio da sessio e joga pra variavel id */
+		$id = $this->session->userdata('id_usuario');
+		$perfil = $this->session->userdata('perfil');
+
+		$data = array(
+			'titulo' => 'Carros De Rua - Perfil',
+			'ondeEsta' => 'Meu Perfil',
+			'descricao' => 'Esse é o seu perfil!',
+			'tela' => 'perfil',
+			'idusuario' => $id,
+			'perfil' => $perfil,
+			'infosDoUsuario' => $this->funcoesUsuario->infosDoUsuario($id)
+		);
+
+		$this->load->view('admin',$data);
+
+	}
+
 
 
 }
