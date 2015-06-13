@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/carrosderua';
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ $config['base_url'] = 'http://localhost/carrosderua';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -59,7 +59,7 @@ $config['uri_protocol']	= 'REQUEST_URI';
 | http://codeigniter.com/user_guide/general/urls.html
 */
 
-$config['url_suffix'] = '';
+$config['url_suffix'] = 'http://localhost/carrosderua/';
 
 /*
 |--------------------------------------------------------------------------
