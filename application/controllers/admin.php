@@ -9,6 +9,10 @@ class Admin extends CI_Controller {
 		parent::__construct();
 		$this->load->library(array('session'));
 		$this->load->helper(array('url'));
+
+		$this->load->model('funcoesUsuario');
+
+
 	}
 	
 	public function index(){
@@ -19,17 +23,19 @@ class Admin extends CI_Controller {
 
 		/* pega o Id_usuario que veio da sessio e joga pra variavel id */
 		$id = $this->session->userdata('id_usuario');
+		$perfil = $this->session->userdata('perfil');
 
 		$data = array(
-			'titulo' => 'Empresa - Painel',
-			'ondeesta' => 'Painel',
+			'titulo' => 'CarrosDeRua - Painel Administrativo',
+			'ondeEsta' => 'Painel',
 			'descricao' => 'Você está no painel Principal!',
-			'tela' => 'painel-admin'
-
+			'tela' => 'painel-admin',
+			'idusuario' => $id,
+			'perfil' => $perfil,
+			'infosDoUsuario' => $this->funcoesUsuario->infosDoUsuario($id)
 		);
 
 		$this->load->view('admin',$data);
-
 
 	}
 

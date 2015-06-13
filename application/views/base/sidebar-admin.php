@@ -15,7 +15,7 @@
               <img src="http://upload.wikimedia.org/wikipedia/commons/d/df/Jair_Bolsonaro.JPG" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-              <p class="fa fa-usd"> 134,235</p>
+              <p class="fa fa-usd"> <?php echo $infosDoUsuario->dinheiro; ?></p>
               <!-- Status -->
               <div class="progress">
                 <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">85%</div>

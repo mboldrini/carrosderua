@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Carros de Rua | Painel</title>
+    <title><?php echo $titulo ?></title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -143,15 +143,15 @@
                   <!-- The user image in the navbar-->
                   <img src="http://upload.wikimedia.org/wikipedia/commons/d/df/Jair_Bolsonaro.JPG" class="user-image" alt="User Image"/>
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                  <span class="hidden-xs">Alexander Pierce</span>
+                  <span class="hidden-xs"><?php echo $infosDoUsuario->nome; ?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- The user image in the menu -->
                   <li class="user-header">
                     <img src="http://upload.wikimedia.org/wikipedia/commons/d/df/Jair_Bolsonaro.JPG" class="img-circle" alt="User Image" />
                     <p>
-                      Alexander Pierce
-                      <small>Piloto</small>
+                      <?php echo $infosDoUsuario->nome; ?>
+                      <small><?php echo $perfil; ?></small>
                     </p>
                   </li>
                   <!-- Menu Body -->
@@ -172,7 +172,7 @@
                       <a href="#" class="btn btn-default btn-flat">Perfil</a>
                     </div>
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sair</a>
+                      <a href="login/logout_ci" class="btn btn-default btn-flat">Sair</a>
                     </div>
                   </li>
                 </ul>
