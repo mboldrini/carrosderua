@@ -25,12 +25,27 @@
 
           <!-- Sidebar Menu -->
           <ul class="sidebar-menu">
-            <li class="header">HEADER</li>
-            <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="#"><i class='fa fa-car'></i> <span>Carros</span></a></li>
-            <li><a href="#"><i class='fa fa-link'></i> <span>Another Link</span></a></li>
+            <li class="header">Administrativo</li>
+            <li class="active"><a href="<?php echo base_url('admin');?>"><i class='fa fa-dashboard'></i> <span>Painel</span></a></li>            
             <li class="treeview">
-              <a href="#"><i class='fa fa-link'></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <a href="#"><i class='fa fa-car'></i> <span>Carros</span> <i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class='fa fa-plus-square'></i> Modelo</a></li>
+                <li><a href="#"><i class='fa fa-plus-square'></i> Marca</a></li>
+                <li><a href="#"><i class='fa fa-plus-square'></i> Categoria</a></li>                
+              </ul>
+            </li>
+            <li><a href="#"><i class='fa fa-link'></i> <span>Another Link</span></a></li>
+            
+          </ul><!-- /.sidebar-menu -->
+
+          <ul class="sidebar-menu">
+            <li class="header">Usuário</li>
+            <!-- Optionally, you can add icons to the links -->
+            <li class="active"><a href="#"><i class='fa fa-car'></i> <span>Meus Carros</span></a></li>
+            <li><a href="#"><i class='fa fa-circle'></i> <span>Usuário</span></a></li>
+            <li class="treeview">
+              <a href="#"><i class='fa fa-circle'></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
               <ul class="treeview-menu">
                 <li><a href="#">Link in level 2</a></li>
                 <li><a href="#">Link in level 2</a></li>
